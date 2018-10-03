@@ -1,0 +1,4 @@
+mkdir (folder) - make folder
+touch (file) - make file
+cd (folder) - enter folder
+cd .. - go up one directory
