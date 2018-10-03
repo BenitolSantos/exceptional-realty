@@ -18,3 +18,10 @@ git checkout -b (new branch name) - creates a new branch within the repository b
 
 wget (link) - gets a photo from a link
 httpserver - checks the ip of your website.(CTL-C to exit)
+
+more stuff for cloning down a copy and switching over to main pages.
+
+git clone https://github.com/<your_username_here>/exceptional-realty
+cd exceptional-realty
+git fetch --all
+git checkout main-pages
