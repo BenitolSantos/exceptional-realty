@@ -2,3 +2,12 @@ mkdir (folder) - make folder
 touch (file) - make file
 cd (folder) - enter folder
 cd .. - go up one directory
+git init - initialize a repository (done once)
+git status - check the status of updates to the repository
+git remote add origin (link) - add the repository origin
+
+REMEMBER TO DO THESE THREE OR IT WON'T SAVE.
+
+git add . - add everything updated
+git commit -m "(message here)" - commit it with a message
+git push - push it to respository
