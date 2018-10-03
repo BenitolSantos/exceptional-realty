@@ -10,4 +10,8 @@ REMEMBER TO DO THESE THREE OR IT WON'T SAVE.
 
 git add . - add everything updated
 git commit -m "(message here)" - commit it with a message
-git push - push it to respository
+git push -u origin master - push it to respository
+
+These three ^
+
+git checkout -b (new branch name) - creates a new branch within the repository because MASTER shouldn't have everything
