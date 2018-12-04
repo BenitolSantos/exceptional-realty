@@ -5,6 +5,7 @@
 /* YOU CAN WORK ON CSS IN BROWSER BY CLICKING ON ANY GREY
 UNDERLINE IN THE BOX OF A CSS SELECTOR
 ON THE RIGHT SIDE OF THE INSPECT ELEMENT CONSOLE */
+/* ALWAYS DO A SIDE BY SIDE COMPARISON OF THE CODE WHEN CODING ALONG */
 
 /* CSS Syntax:
 selector {
@@ -47,7 +48,7 @@ background: aqua;
 
 #logo h1 { /* selects <h1> if inside the id="logo" */
   font-family: 'Clicker Script', cursive;
-
+}
 #logo h2{
   font-family: 'Elsie Swash Caps', cursive;
 }
