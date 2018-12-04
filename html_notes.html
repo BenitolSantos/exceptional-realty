@@ -1,0 +1,178 @@
+<!-- box model notes and code -->
+
+<div class="use-content-box"> I'm a box </div>
+<div class="use-border-box"> I'm a box </div>
+
+<!-- Layout Notes and code -->
+body {
+    font-size: 1
+        100%;
+}
+
+div {
+    background: aqua;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1em;
+}
+
+.fixed-size {
+    width: 200px;
+}
+
+.elastic-size {
+    width: 12.5em; /* 200px/16px */
+}
+
+.fluid-size {
+    width: 70%;
+}
+
+.threshold-size {
+    min-width: 500px;
+    max-width: 900px;
+}
+
+<!-- Overflow Notes and code -->
+
+<div class="hide-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore blanditiis pariatur aspernatur expedita necessitatibus ab eaque a quae aliquam. Officia quisquam quibusdam odit neque consequatur nulla vero explicabo vitae!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore blanditiis pariatur aspernatur expedita necessitatibus ab eaque a quae aliquam. Officia quisquam quibusdam odit neque consequatur nulla vero explicabo vitae!</p>
+</div>
+
+<div class="scroll-content">
+    Scroll me
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore blanditiis pariatur aspernatur expedita necessitatibus ab eaque a quae aliquam. Officia quisquam quibusdam odit neque consequatur nulla vero explicabo vitae!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore blanditiis pariatur aspernatur expedita necessitatibus ab eaque a quae aliquam. Officia quisquam quibusdam odit neque consequatur nulla vero explicabo vitae!</p>
+</div>
+
+<div class="vis-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore blanditiis pariatur aspernatur expedita necessitatibus ab eaque a quae aliquam. Officia quisquam quibusdam odit neque consequatur nulla vero explicabo vitae!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore blanditiis pariatur aspernatur expedita necessitatibus ab eaque a quae aliquam. Officia quisquam quibusdam odit neque consequatur nulla vero explicabo vitae!</p>
+</div>
+
+<!-- Fluid Height notes and code -->
+
+<div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<!-- Display Notes and code -->
+
+<div> A </div>
+<div> B </div>
+<span> C </span>
+<span> D </span>
+
+<!-- Float Notes and code -->
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae odio excepturi similique eius doloremque officiis possimus quod neque esse vel vero in perferendis illum dignissimos. Esse inventore cum labore!</p>
+
+<img src="http://placekitten.com/200/230">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae odio excepturi similique eius doloremque officiis possimus quod neque esse vel vero in perferendis illum dignissimos. Esse inventore cum labore!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae odio excepturi similique eius doloremque officiis possimus quod neque esse vel vero in perferendis illum dignissimos. Esse inventore cum labore!</p>
+
+<p class="fall-below">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae odio excepturi similique eius doloremque officiis possimus quod neque esse vel vero in perferendis illum dignissimos. Esse inventore cum labore!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestiae odio excepturi similique eius doloremque officiis possimus quod neque esse vel vero in perferendis illum dignissimos. Esse inventore cum labore!</p>
+
+
+<!-- Clearfix Notes and Code -->
+
+<section id="jazz" class="clearfix"> <!-- -->
+    <article> Miles D </article>
+    <article> BB King </article>
+</section>
+
+<section id="rock" class="clearfix">
+    <article> AC/DC </article>
+    <article> Black Sabbath </article>
+</section>
+
+<div class= "container clearfix">
+  <!-- I'm a static parent. -->
+  <div class = "box left">
+    <!-- I'm a box floating left. -->
+  </div>
+  <!-- I need a clear fix class if you do not want me to collapse when I have floating children inside me!" -->
+</div>
+
+<!-- Centering Notes and Code -->
+<div class="wrapper">
+    <header>
+        <h1>Ragga Muffin Supply</h1>
+    </header>
+
+    <section id="new">
+        <h2>New Items</h2>
+    </section>
+
+    <section id="music">
+        <h2>Music</h2>
+    </section>
+
+    <section id="clothing">
+        <h2>Clothing</h2>
+    </section>
+
+    <footer>
+        &copy; 2014 Ragga Muffin Supply
+    </footer>
+</div>
+
+<!-- Column Structure Notes and code-->
+
+<div class="wrapper">
+    <header>
+        <h1>Ragga Muffin Supply</h1>
+    </header>
+
+    <section id="new">
+        <h2>New Items</h2>
+    </section>
+
+    <section id="music">
+        <h2>Music</h2>
+    </section>
+
+    <section id="clothing">
+        <h2>Clothing</h2>
+    </section>
+
+    <footer>
+        &copy; 2014 Ragga Muffin Supply
+    </footer>
+</div>
+
+<!-- Postioning Notes and Code-->
+
+<section id="sewer">
+    <div id="turtle">
+        Donatello
+    </div>
+</section>
+
+<section id="daily-planet">
+    <div id="clark">
+        Superman
+    </div>
+</section>
+
+<section id="lex-luther">
+    <div id="clark">
+        Superman
+    </div>
+</section>
+
+<section id="daily-bugle">
+    <div id="peter">
+        Spiderman
+    </div>
+</section>
+
+
+<!-- Z index Notes and Code -->
+<div id="a"> A </div>
+<div id="b"> B </div>
+<div id="c"> C </div>

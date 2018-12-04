@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Elsie);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 /* This is a comment! */
+
+/* YOU CAN WORK ON CSS IN BROWSER BY CLICKING ON ANY GREY
+UNDERLINE IN THE BOX OF A CSS SELECTOR
+ON THE RIGHT SIDE OF THE INSPECT ELEMENT CONSOLE */
+
 /* CSS Syntax:
 selector {
   property: value;

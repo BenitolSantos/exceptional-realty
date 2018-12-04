@@ -1,0 +1,365 @@
+/* Box Model Notes and code */
+div {
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed black; (colors, styles) /* Border (colors,styles) */
+    padding: 20px; /* Padding (spacing inside an element) */
+    margin: 20px; /* Margin (spacing outside an element) */
+}
+
+
+/* W3C */
+.use-content-box {
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+/* IE */
+.use-border-box {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* Layout Types Notes and code */
+body {
+    font-size: 1
+        100%;
+}
+
+div {
+    background: aqua;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1em;
+}
+
+.fixed-size {
+    width: 200px; /* All columns are specified using columns */
+}
+
+.elastic-size {
+    width: 12.5em; /* 200px/16px */ /* All columns sized using ems, which are scaled in proportion to text */
+}
+
+.fluid-size {
+    width: 70%; /* All columns are sized using decimals */
+}
+
+.threshold-size { /* Sets up starting and stoping points for the container*/
+    min-width: 500px;
+    max-width: 900px;
+}
+
+/* Overflow Notes and Code */
+
+div {
+    width: 250px;
+    height: 200px;
+    background: aqua;
+    margin: 10px;
+    padding: 20px;
+}
+
+p {
+    background: rgba(255, 255, 0, 0.5);
+}
+
+.hide-content {
+    overflow: hidden; /* cuts off anything after the border */
+}
+
+.scroll-content {
+    overflow: scroll; /* uses a scroll bar to keep a viewable part of the body of text within the border */
+}
+
+.vis-content {
+    overflow: visible; /* makes the whole body of text visible, even after the border */
+}
+
+/* Fluid height notes and code */
+
+body, html {
+  height: 100%;
+  min-height: 100%; /* A minimum height or a maximum height can been given to create  a restraint*/
+}
+
+div {
+  background: aqua;
+  padding: 20px;
+  margin: 10px;
+  font-size: 1em;
+  height: 100%;
+
+
+}
+
+/* Display Notes and Code */
+
+body {
+    padding: 30px;
+}
+
+div {
+    /* div display blocks by default */
+    /* this changes it to display -> display: inline; appears side by side does not accept width or top and bottom margins */
+    padding: 25px;
+    background: rgba(179, 204, 255, 1);
+    margin: 10px;
+}
+
+span {
+    /* span displays inline by default */
+    /* this changes it to block -> display: block; displays one above the other, takes up the whole line. Able to specify top and bottom margin */
+    padding: 10px;
+    background: rgba(255, 169, 174, 1);
+}
+
+    /* this changes it to inline-block -> display: inline-block; displays side by side, allows top and bottom margins, and width to be specified. */
+    /* this changes it to table-cell -> display: inline-block; displays as cells within a table, without margin. */
+
+
+/* Float notes and Code */
+
+
+#sidebar {
+  float: left; /* Floating allows us to an element to the left or the right to create a good column structure */
+/* in this case, a picture of a kitten */
+}
+
+#main {
+  float: right;
+}
+
+footer {
+  clear: both; /* Clearing is a property which allows an element to clear past the height of any floating content */
+
+}
+
+img {
+  display: block;
+  float:left;
+  margin: 0 20px 10px 0;
+}
+
+.fall_below {
+  clear:both;
+}
+
+/* Clearfix Notes and Code */
+section {
+    background: #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+}
+
+article {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+}
+
+#jazz article {
+    float: left;
+    background: aqua;
+}
+
+#rock article {
+    float: right;
+    background: lime;
+}
+
+.clearfix:after { /* fixes floated elements inside of a parent element and adjusts based on the size of the children. After an element. */
+    content: "."; /* This element. */
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+/* Centering Notes and Code */
+.wrapper {
+    margin: 0 auto; /* Auto is used to adjust margins accordingly to keep them centered */
+    width: 600px;
+    background: #ccc;
+}
+
+header, footer {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+
+section {
+    padding: 10px;
+}
+
+#new {
+    float: left;
+    background: red;
+    width: 33.333%; /* each is 33.333 because there are three columns */
+}
+
+#music {
+    float: left;
+    background: yellow;
+    width: 33.333%;
+}
+
+#clothing {
+    float: left;
+    background: green;
+    width: 33.333%;
+}
+
+
+#toys {
+    float: left;
+    background: yellow;
+    width: 33.333%;
+}
+
+footer {
+    clear: both;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Column Structure Notes and code */
+.wrapper {
+    margin: 0 auto;
+    width: 600px;
+    background: #ccc;
+}
+
+header, footer {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 1%; /* Margin around box */
+}
+
+#new {
+    float: left;
+    background: red;
+    width: 31.333%; /* changed from 33.33333% to 31.3333% to add space for margin */
+}
+
+#music {
+    float: left;
+    background: yellow;
+    width: 31.333%;
+}
+
+#clothing {
+    float: left;
+    background: green;
+    width: 31.333%;
+}
+
+
+#toys {
+    float: left;
+    background: yellow;
+    width: 31.333%;
+}
+
+footer {
+    clear: both;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; /* These two are to make it easier for compatability to firefox and safari */
+    box-sizing: border-box; /* This negates padding being by including border and padding into the width,
+    otherwise the clothing column would wrap below */
+}
+
+
+/* Positioning Notes and Code */
+
+section {
+    margin: 10px;
+    padding: 20px;
+    background: #ccc;
+    width: 600px;
+}
+
+div {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#turtle {
+    position: relative; /* relative - pushes relative to its original position */
+    top: 20px; /* 20px down, because it pushes 20px from the top */
+    left: 50px; /* 50px right because it pushes 50px from the top */
+    background: rgba(0,255,0,0.75);
+}
+
+#clark {
+    position: absolute; /* absolute - pushes relative to the whole page */
+    top: 0; /* 0 from the top of the screen */
+    right: 0; /* 0 from the right of the screen */
+    background: rgba(0,0,255,0.75);
+}
+
+#lex-luther {
+    position: relative;
+
+}
+
+#peter {
+    position: fixed;
+    /* fixed - pushes relative to the whole page but remains fixed during scrolling */
+    top: 0;
+    right: 120px;
+    background: rgba(255,0,0,0.75);
+}
+
+/* Z index Notes and Code */
+
+/* Z index is layers from top to bottom along the Z axis */
+
+div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+#a {
+   top: 0;
+   left: 0;
+   z-index: 1;
+   background: rgba(255,0,0,0.75);
+}
+
+#b {
+   top: -25px;
+   left: 25px;
+   z-index: 2;
+   background: rgba(0,255,0,0.75);
+}
+
+#c {
+   top: -50px;
+   left: 50px;
+   z-index: 3;
+   background: rgba(0,0,255,0.75);
+}
