@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 /* This is a comment! */
 
+
 /* YOU CAN WORK ON CSS IN BROWSER BY CLICKING ON ANY GREY
 UNDERLINE IN THE BOX OF A CSS SELECTOR
 ON THE RIGHT SIDE OF THE INSPECT ELEMENT CONSOLE */
@@ -83,8 +84,9 @@ img, video, audio {
 }
 
 .wrapper {
-  width: 1080px;
+  width: 960px;
   margin: 0 auto;
+  background: #eee;
 }
 
 /* (96 - 4) % 3 */
@@ -93,6 +95,8 @@ img, video, audio {
   width: 32%;
   background: #ccc;
 }
+
+
 
 /* (32 * 2) + 2 */
 .col-2 {
@@ -113,9 +117,13 @@ img, video, audio {
   height: 0;
   line-height: 0;
 }
+/* This is a regex selector for css*/
+#contact {
+  padding: 5px;
+}
 
 [class*="col-"] {
-  margin-left: 2%;
+  margin-left: 0%;
 }
 
 .first {
