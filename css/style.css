@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Elsie);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 /* This is a comment! */
-
+/* ANY CODEALONG JUST COPY THE CODE TO YOUR BEST EXTENT, IF IT DOESN'T LOOK EXACTLY LIKE IT, AND IF YOU UNDERSTAND, MOVE ALONG. - Justin Daniel 12/5/18 */
 
 /* YOU CAN WORK ON CSS IN BROWSER BY CLICKING ON ANY GREY
 UNDERLINE IN THE BOX OF A CSS SELECTOR
@@ -84,9 +84,8 @@ img, video, audio {
 }
 
 .wrapper {
-  width: 960px;
+  width: 1080px;
   margin: 0 auto;
-  background: #eee;
 }
 
 /* (96 - 4) % 3 */
@@ -123,7 +122,7 @@ img, video, audio {
 }
 
 [class*="col-"] {
-  margin-left: 0%;
+  margin-left: 2%;
 }
 
 .first {
@@ -148,7 +147,7 @@ section {
 
 /*///// SOCIAL /////*/
 
-#social {
+.social {
   position: fixed;
   top: 200px;
   right: 20px;
@@ -156,7 +155,7 @@ section {
   z-index: 1;
 }
 
-#social a {
+.social a{
   display: block;
   width: 40px;
   height: 40px;
