@@ -4,7 +4,7 @@
 /* ANY CODEALONG JUST COPY THE CODE TO YOUR BEST EXTENT, IF IT DOESN'T LOOK EXACTLY LIKE IT, AND IF YOU UNDERSTAND, MOVE ALONG. - Justin Daniel 12/5/18 */
 
 /* YOU CAN WORK ON CSS IN BROWSER BY CLICKING ON ANY GREY
-SOURCES
+SOURCES *be warned that zooming in changes webpage and can effect positioning -> DONT CODE FROM THERE*
 ON THE RIGHT SIDE OF THE INSPECT ELEMENT CONSOLE */
 /*JUST REMEMBER TO COPY PASTE THE CHANGES */
 /* ALWAYS DO A SIDE BY SIDE COMPARISON OF THE CODE WHEN CODING ALONG */
@@ -127,16 +127,16 @@ img, video, audio {
 the columns because I couldn't adjust
 the margin enough to make them fit */
 
-.wethreecolumns {position: relative;
-                  bottom: 120px;
+#details {position: relative;
+                  bottom: 50px;
                   left:169px }
 
 .column1 {position: relative;
-          top: 227px;
+          top: 220px;
           right: 900px;}
 
 .column2 {position: relative;
-          left: 172px;}
+          left: 175px;}
 
 .column3 {position: relative;
                     left: 172px;}
@@ -145,7 +145,6 @@ the margin enough to make them fit */
 
 [class*="col-"] {
   margin-left: 2%;
-  z-index: 2;
 
 }
 
@@ -191,5 +190,5 @@ section {
 .footer{
 width: 600px;
 position: relative;
-left:790px;
-bottom:110px}
+left:715px;
+bottom:0px;}
