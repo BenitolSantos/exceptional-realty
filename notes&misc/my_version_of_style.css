@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Elsie);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+/* This is a comment! */
+/* ANY CODEALONG JUST COPY THE CODE TO YOUR BEST EXTENT, IF IT DOESN'T LOOK EXACTLY LIKE IT, AND IF YOU UNDERSTAND, MOVE ALONG. - Justin Daniel 12/5/18 */
+
+/* YOU CAN WORK ON CSS IN BROWSER BY CLICKING ON ANY GREY
+SOURCES *be warned that zooming in changes webpage and can effect positioning -> DONT CODE FROM THERE*
+ON THE RIGHT SIDE OF THE INSPECT ELEMENT CONSOLE */
+/*JUST REMEMBER TO COPY PASTE THE CHANGES */
+/* ALWAYS DO A SIDE BY SIDE COMPARISON OF THE CODE WHEN CODING ALONG */
+
+/* CSS Syntax:
+selector {
+  property: value;
+  property: value;
+}
+ */
+ /* Type selector */
+
+ p { /* select all <p> */
+   font-size: 16px; /* 16px, ?pt, 100% 1em */
+   line-height: 1.5em;
+ }
+
+ figcaption {
+   /*font-weight: normal;
+   font-size: 0.75em;
+   line-height: 1.5em;
+   font-family: Georgia, "New Times Roman", serif;*/
+   font: normal 0.75em/1.5em Georgia, "New Times Roman", seriff;
+   color: #777;
+   text-align: right;
+ }
+
+ /* Class selector (applied to as many elements as you like) */
+
+ .milk-text { /* select elements with class="milk-text" */
+  font: bold 2.6em, 'Elsie', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+ }
+
+/* ID selector (apply one unique element per page) */
+
+#logo {/* select elements with id="logo" */
+background: aqua;
+}
+
+/* Descendent Selector */
+
+#logo h1 { /* selects <h1> if inside the id="logo" */
+  font-family: 'Clicker Script', cursive;
+}
+#logo h2{
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psuedo Selector */
+
+#details a:link, #details a: visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:active {
+  color: red;
+}
+
+/*///// MEDIA /////*/
+img, video, audio {
+  max-width: 100%;
+}
+
+/*///// LAYOUT /////*/
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* (96 - 4) % 3 */
+.col-1 {
+  float: left;
+  width: 32%;
+  background: #ccc;
+  z-index: 2;
+}
+
+#details { margin-left: 0%;}
+
+/* (32 * 2) + 2 */
+.col-2 {
+  float: left;
+  width: 66%;
+  background: #ccc;
+}
+
+.col-3 {
+  background: #ccc;
+}
+
+.clearfix:after {
+  content: "."
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+/* This is a regex selector for css*/
+#contact {
+  padding: 5px;
+}
+
+/*these four selectors were used to move
+the columns because I couldn't adjust
+the margin enough to make them fit */
+
+#details {position: relative;
+                  bottom: 50px;
+                  left:169px }
+
+.column1 {position: relative;
+          top: 220px;
+          right: 900px;}
+
+.column2 {position: relative;
+          left: 175px;}
+
+.column3 {position: relative;
+                    left: 172px;}
+
+
+
+[class*="col-"] {
+  margin-left: 2%;
+
+}
+
+.first {
+  margin-left: 0%;
+}
+
+/*///// SECTIONS ///// */
+
+header {
+  postition; fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffff;
+  z-index: 1;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/*///// SOCIAL /////*/
+
+.social {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
+}
+
+.social a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+
+}
+
+/* Footer */
+.footer{
+width: 600px;
+position: relative;
+left:715px;
+bottom:0px;}
